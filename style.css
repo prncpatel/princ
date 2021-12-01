@@ -1,0 +1,161 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* CONTAINER1 CONTENTS */
+.container1{
+    width: 100vw;
+    height: 90vh;
+    /* background-image: linear-gradient(to bottom right,deeppink,lightblue); */
+    background-image: url(/wp6733239.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: animate;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+@keyframes animate {
+    0%{
+        background-image: url(wp6733239.jpg);
+    }
+    100%{
+        background-image: url(wp2119144.jpg);
+    }
+    
+}
+.container1 .header{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.container1 .header .menu{
+    width:100%;
+    height: 100px;
+    padding-right: 1%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.container1 .header .menu a{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 30px;
+    margin: 1%;
+    color: white;
+    border: 1px solid white;
+}
+.container1 .header .menu a:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* CONTAINER2 CONTENTS */
+.section{
+    width: 100vw;
+    margin-top: 2%;
+}
+.section .container2{
+    width: 90%;
+    height: 100%;
+    margin: 0% auto;
+}
+.section .container2 .flex{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.section .container2 .flex .box{
+    width: 49%;
+    height: 350px;
+}
+.section .container2 .flex .box1{
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.2);
+}
+.section .container2 .flex .box1 h1,p{
+    font-size: 24px;
+    overflow: auto;  
+    margin-left: 10px;
+}
+
+.section .container2 .grid{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+.section .container2 .grid .box1{
+    grid-area: 1/1/1/1;
+}
+.section .container2 .grid .box1 img{
+    height: 100%;
+    width: 100%;
+}
+.section .container2 .grid .box2{
+    grid-area: 1/2/1/2;
+   
+}
+.section .container2 .grid .box2 img{
+    height: 100%;
+    width: 100%;
+}
+.section .container2 .grid .box3{
+    grid-area: 1/3/1/3;
+}
+.section .container2 .grid .box3 img{
+    height: 100%;
+    width: 100%;
+}
+.section .container2 .grid .box4{
+    background-color: rgba(0,0,0,0.2);
+    grid-area: 2/1/-1/-1;
+}
+.section .container2 .grid .box4 p{
+    margin: 2% auto;
+    text-align: center;
+    max-width: 600px;
+}
+.button button{
+    display: block;
+    margin: 2% auto;
+    padding: 15px 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* FOOTER CONTENTS */
+footer{
+    width: 100vw;
+    height: 150px;
+    background-color: rgb(17, 22, 22);
+}
+footer .icons{
+    padding-top: 1%;
+    font-size: 44px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+footer .icons i{
+    padding: 10px;
+    cursor: pointer;
+}
